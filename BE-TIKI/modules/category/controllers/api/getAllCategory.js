@@ -1,4 +1,4 @@
-import getAllCategoryService from "../../services/category.js"
+import {getAllCategoryService} from "../../services/category.js"
 import status from "http-status"
 import catchAsync from "../../../../utils/catchAsync.js"
 const getAllCategoryAPI=catchAsync(async(req,res)=>{
@@ -8,3 +8,4 @@ const getAllCategoryAPI=catchAsync(async(req,res)=>{
     )
 })
 export default getAllCategoryAPI
+
