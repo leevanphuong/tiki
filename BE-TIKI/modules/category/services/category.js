@@ -1,6 +1,10 @@
 import Category from "../model/category.js"
-const getAllCategoryService=async()=>{
+export const getAllCategoryService=async()=>{
     const categoryService=await Category.find()
     return categoryService
 }
-export default getAllCategoryService
+
+export const deleteCategoryService=async(req,res)=>{
+    const categoryService=await Category.findByIdAndDelete(req.params.id)
+    return categoryService
+}
