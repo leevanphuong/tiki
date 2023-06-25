@@ -17,3 +17,7 @@ export const addProduct= async(req)=>{
     })
 return products
 }
+export const getOneproduct= async(req)=>{
+    const getOne = await product.findById(req.params.id)
+    return getOne
+}
